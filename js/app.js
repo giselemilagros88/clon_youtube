@@ -12,6 +12,9 @@ const videosQueMeGustan = 'https://youtube.googleapis.com/youtube/v3/videos?myRa
 
 const videosSearch = 'https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=100&key=AIzaSyADJ7CqV3isjEKK2Sc8n1EvkP-R7Cy0pPA'
 
+const videosSearchClaveDos = 'https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=100&key=AIzaSyBefTrtwOQr-YyZVQ4zjHO51Cj8x---GzA';
+
+
 /*
 //?video_id=1A7Qw88As64
 const options = {
@@ -23,7 +26,7 @@ const options = {
 };*/
 
 try {
-   fetch(videosSearch).then(resp => resp.json()) .then(data =>{
+   fetch(videosSearchClaveDos).then(resp => resp.json()) .then(data =>{
      console.log(data);
      let videos = data.items;
      const contenedorVideos = document.querySelector(".youtube-container");
